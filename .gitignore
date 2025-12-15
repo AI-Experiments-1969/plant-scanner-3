@@ -57,4 +57,5 @@ static/uploads/*   # الصور المرفوعة من المستخدمين
 !static/uploads/.gitkeep  # استثناء ملف فارغ للحفاظ على المجلد
 
 # Logs
-*.log
+*.logmodel/*.keras 
+model/*.keras 
