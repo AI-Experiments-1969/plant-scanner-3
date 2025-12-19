@@ -1,0 +1,14 @@
+name: Add Potato Issues to Project
+on:
+  issues:
+    types: [opened]
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add issue to Potato Project
+        uses: actions/add-to-project@v0.4.0
+        with:
+          project-url: 'https://github.com/users/Abdullahreda1969/projects/8'
+          github-token: ^^{{ secrets.GITHUB_TOKEN }}
+          labeled: 'potato-project'
